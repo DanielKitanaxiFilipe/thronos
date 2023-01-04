@@ -1,10 +1,12 @@
 import React from 'react';
 import { Cards } from '../components/Cards';
+import  Menu  from '../components/Menu'
 import { 
   HiChevronLeft,
   HiChevronRight,
   HiOutlineNewspaper,
-  HiOutlineDotsVertical
+  HiOutlineDotsVertical,
+  HiOutlineUser
 } from 'react-icons/hi';
 import { 
   Container,
@@ -15,7 +17,8 @@ import {
 
 function Dashbord() {
   return <main className='dashbord h-100 w-100'>
-    <section>
+    <section className='d-flex'>
+    <Menu/>
       <Container className='p-4'>
         <h5 className='mb-4'><b>Painel de controle</b></h5>
         <Row>
@@ -44,31 +47,36 @@ function Dashbord() {
               <table className="table" striped bordered hover>
                 <thead>
                   <tr>
-                    <th className='ps-4'>Nome</th>
+                  <th className='ps-4'>Avatar</th>
+                    <th>Nome</th>
                     <th>Telefone</th>
                     <th>Email</th>
                     <th>Endereço</th>
                     <th>Idade</th>
                     <th>Genero</th>
                     <th>Tipo de menbro</th>
-                    <th className='pe-4 text-right'>Username</th>
+                    <th className='pe-4 text-right'>Accao</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td className='ps-4'>Daniel Kitanaxi Filipe</td>
-                    <td>924 660 115</td>
-                    <td>danielkitanaxifilipe12@gmail.com</td>
-                    <td>Luanda/Cazenga</td>
-                    <td>???????</td>
-                    <td>25</td>
-                    <td>Cazenga41</td>
+                    <td className='ps-4'>
+                    <div className="avatar">
+                      <HiOutlineUser/>
+                    </div>
+                    </td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
                     <td className='pe-4 text-right'>
                     <Dropdown>
                       <Dropdown.Toggle variant="success" id="dropdown-basic">
                       <HiOutlineDotsVertical/>
                       </Dropdown.Toggle>
-
                       <Dropdown.Menu>
                         <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
                         <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>

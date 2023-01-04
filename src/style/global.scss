@@ -25,6 +25,11 @@ body{
 .bd-none{
   background: none;
 }
+.btn-add-modal-link{
+  font-size: 13px;
+  margin-top: -5px;
+  border-radius: 20px;
+}
 ::-webkit-scrollbar {width: 8px;}
 ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 10px;background: #333742;
@@ -74,13 +79,15 @@ body{
         padding-right: 30px;
         .card-form-modal{
           .label{
-            background: rgb(255, 255, 255);
+            span{
+              background: rgb(255, 255, 255);
+              padding-left: 5px;
+              padding-right: 10px;
+            }
             margin-top: -10px !important;
             color: rgba(17, 17, 17, 0.808);
             max-width: 150px;
-            font-size: 13px;
-            width: 50px;
-            padding-left: 6px;
+            font-size: 13px; 
             padding-right: 6px;
             font-weight:700;
           }

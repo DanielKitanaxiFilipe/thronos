@@ -2,15 +2,15 @@ import React,  { useState, useEffect } from 'react';
 import { Modal, Button  } from 'react-bootstrap';
 
 function Documents() {
-  const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const [showAddMenbro, setShowAddMenbro] = useState(false);
+  const handleCloseAddMenbro = () => setShowAddMenbro(false);
+  const handleShowAddMenbro = () => setShowAddMenbro(true);
   return (
     <>
-    <div><Button variant="primary" onClick={handleShow}>
+    <div><Button variant="primary" onClick={handleShowAddMenbro}>
         Launch demo modal
       </Button></div>
-      <Modal show={show} onHide={handleClose}>
+      <Modal show={showAddMenbro} onHide={handleCloseAddMenbro}>
         <Modal.Header closeButton>
           <Modal.Title>Adicionar usuario</Modal.Title>
         </Modal.Header>
@@ -21,10 +21,10 @@ function Documents() {
           </div>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="light" onClick={handleClose}>
+          <Button variant="light" onClick={handleCloseAddMenbro}>
             <b>Cancelar</b>
           </Button>
-          <Button variant="dark" onClick={handleClose}>
+          <Button variant="dark" onClick={handleCloseAddMenbro}>
             Adicionar
           </Button>
         </Modal.Footer>

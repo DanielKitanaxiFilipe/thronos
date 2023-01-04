@@ -2,30 +2,22 @@ import React, {useState, useEffect} from 'react';
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import './style/global.scss'
 import Home from './pages/Home';
-import Menu from './components/Menu';
 import Dashbord from './pages/Dashbord';
-import Documents from './pages/Documents';
-import Residents from './pages/Residents';
-import Announcements from './pages/Announcements';
-import { All } from './pages/Complaint/Chains/All';
-import { Chat } from './pages/Complaint/Chains/Chat';
+import Eclisiastico from './pages/Organizacao/Eclisiastico';
+import Celulas from './pages/Organizacao/Celulas';
+import Departamento from './pages/Organizacao/Departamento';
+
 
 function App() {
   return (<>
   <Router>
-    <main className='d-flex'>
-    <Menu/>
         <Routes>
+          <Route path="/" element={<Home/>}/>
           <Route path="/dashbord" element={<Dashbord/>}/>
-          <Route path="/documents" element={<Documents/>}/>
-          <Route path="/residents" element={<Residents/>}/>
-          {/*Complaint*/}
-          <Route path="/all" element={<All/>}/>
-          <Route path="/chat" element={<Chat/>}/>
-          {/*Complaint*/}
-          <Route path="/announcements" element={<Announcements/>}/>
+          <Route path="/eclisiastico" element={<Eclisiastico/>}/>
+          <Route path="/celulas" element={<Celulas/>}/>
+          <Route path="/departamento" element={<Departamento/>}/>
         </Routes>
-    </main>
   </Router>
   </>);
 }

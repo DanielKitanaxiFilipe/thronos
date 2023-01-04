@@ -9,9 +9,9 @@ export const MenuData = [
   },
   {
     title: 'Organização',
-    path : '/wwdwdw0w',
+    path : '/eclisiastico',
     icon: <HiIcon.HiOutlineHome className="icon-menu me-2"/>,
-    iconClosed: <HiIcon.HiOutlineChevronDown/>,
+    /*iconClosed: <HiIcon.HiOutlineChevronDown/>,
     iconOpend: <HiIcon.HiOutlineChevronDown/>,
     subNav: [
       {
@@ -30,13 +30,13 @@ export const MenuData = [
         title: 'Porteiros',
         path : '/www6'
       },
-    ]
+    ]*/
   },
   {
     title: 'Secretaria',
     path: '/all',
     icon: <HiIcon.HiOutlineClipboardList className="icon-menu me-2"/>,
-    iconClosed: <HiIcon.HiOutlineChevronDown/>,
+    /*iconClosed: <HiIcon.HiOutlineChevronDown/>,
     iconOpend: <HiIcon.HiOutlineChevronDown/>,
 
     subNav: [
@@ -48,13 +48,13 @@ export const MenuData = [
         title: 'Garantia',
         path : '/reclam2'
       }
-    ]
+    ]*/
   },
   {
     title: 'Tesouraria',
     path: '/eeeweww',
-    icon: <HiIcon.HiOutlineCog className="icon-menu me-2"/>,
-    iconClosed: <HiIcon.HiOutlineChevronDown/>,
+    icon: <HiIcon.HiOutlineChartPie className="icon-menu me-2"/>,
+   /* iconClosed: <HiIcon.HiOutlineChevronDown/>,
     iconOpend: <HiIcon.HiOutlineChevronDown/>,
 
     subNav: [
@@ -74,10 +74,10 @@ export const MenuData = [
         title: 'Usuário do sistema',
         path : '/reclam8'
       }
-    ]
+    ]*/
   },
   
-  {
+  /*{
     title: 'Definição',
     path: '/eeeweww',
     icon: <HiIcon.HiOutlineCog className="icon-menu me-2"/>,
@@ -102,5 +102,5 @@ export const MenuData = [
         path : '/reclam8'
       }
     ]
-  }
+  }*/
 ];
